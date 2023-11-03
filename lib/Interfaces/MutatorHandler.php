@@ -2,12 +2,12 @@
 
 namespace PHPNomad\Mutator\Interfaces;
 
-interface Mutator
+interface MutatorHandler
 {
     /**
      * Mutates using the provided arguments.
      *
      * @return mixed
      */
-    public function mutate();
+    public function mutate(...$args);
 }

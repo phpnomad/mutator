@@ -4,7 +4,7 @@ namespace PHPNomad\Mutator\Interfaces;
 interface MutationStrategy
 {
     /**
-     * @param callable():Mutator $mutatorGetter
+     * @param callable():MutatorHandler $mutatorGetter
      * @param callable $action
      * @return void
      */
