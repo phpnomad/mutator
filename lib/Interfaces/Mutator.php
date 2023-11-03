@@ -7,7 +7,7 @@ interface Mutator
     /**
      * Mutates using the provided arguments.
      *
-     * @return mixed
+     * @return void
      */
     public function mutate();
 }
