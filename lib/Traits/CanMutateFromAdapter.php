@@ -13,6 +13,6 @@ trait CanMutateFromAdapter{
         $skuMutation = $this->mutationAdapter->convertFromSource(...$args);
         $skuMutation->mutate();
 
-        return $this->mutationAdapter->convertToSource($skuMutation);
+        return $this->mutationAdapter->convertToResult($skuMutation);
     }
 }
