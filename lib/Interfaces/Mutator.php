@@ -9,5 +9,5 @@ interface Mutator
      *
      * @return void
      */
-    public function mutate();
+    public function mutate(): void;
 }
