@@ -10,9 +10,9 @@ trait CanMutateFromAdapter{
 
     public function mutate(...$args)
     {
-        $skuMutation = $this->mutationAdapter->convertFromSource(...$args);
-        $skuMutation->mutate();
+        $mutation = $this->mutationAdapter->convertFromSource(...$args);
+        $mutation->mutate();
 
-        return $this->mutationAdapter->convertToResult($skuMutation);
+        return $this->mutationAdapter->convertToResult($mutation);
     }
 }
